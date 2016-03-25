@@ -1,0 +1,319 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Calligraffitti);
+
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*################################################################################
+#
+#       ESTILOS PROPIOS
+#
+##################################################################################*/
+
+#presentacion  {
+    background-color: #dedede;
+}
+
+#productores {
+    background-color: #dedede;
+    margin-top: 51px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+#modo-venta, #ciudades {
+    background-color: #dedede;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.titular-seccion {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1.5em;
+    padding-bottom: .5em;
+    text-align: center;
+    font-family: Lobster, Montserrat, sans-serif;
+}
+
+.titular-seccion-izquierda {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+    text-align: left;
+    font-family: Lobster, Montserrat, sans-serif;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linea-inferior {
+    width: 100px;
+    border: 3px solid #FFD300;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1.5em;
+}
+
+.titulares-pie-foto
+{
+    font-family: 'Calligraffitti', cursive;
+    font-size: 13pt;
+    padding-top: .9em;
+    padding-bottom: 1.2em;
+    font-weight: bold;
+}
+
+.tint {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+}
+
+.tint:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: none;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.tint:hover:before {
+    background: rgba(62, 255, 177, 0.3);
+}
+
+#razones
+{
+    background-image: url("../img/brossa.jpg");
+}
+
+.cuadro-razones {
+    background-color: white;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    margin-bottom: 45px;
+}
+
+#newsletter {
+    background-color: #0b9343;
+    color: white;
+}
+
+.newsletter-form {
+    padding-bottom: 45px;
+    margin-right: auto;
+}
+
+#noticias {
+    background-color: #dedede;
+}
+
+#pie-pagina {
+    background-color: #FFD300;
+    color: white;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: url("../img/fondocereales.png");
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position: right;
+    text-shadow: 2px 2px 2px #0f0f0f;
+}
+
+.titular-pie-h4 {
+    border-bottom: 1px solid white;
+}
+
+#pie-pagina .contenedor{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.parrafo-copyright {
+    margin-top: 50px;
+}
+
+
+.opacity-08 {
+    opacity: .8;
+}
+
+.tabla-productores {
+    background-color: #fff;
+}
+
+.tabla-productores td:hover {
+    background-color: #d1d4d6;
+}
+
+.tabla-productores td>a:hover {
+    color: #0b9343;
+    text-decoration: none;
+    margin-right: -10px;
+    margin-left: 10px;
+}
+
+.tabla-productores td>a {
+    color: #000;
+}
+
+.tbl-borde-sup-amarillo {
+    border-top: 4px solid #FFD300;
+}
+
+/*################################################################################
+#
+#       SOBREESCRITURA DE ESTILOS DE BOOTSTRAP
+#
+##################################################################################*/
+.navbar {
+    -webkit-box-shadow: rgba(255, 113, 23, 0.2) 3px 5px 5px;
+    -moz-box-shadow: rgba(255, 113, 23, 0.2) 3px 5px 5px;
+    box-shadow: rgba(255, 113, 23, 0.2) 3px 5px 5px;
+}
+
+.carousel-inner {
+    -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+}
+
+.carousel-caption {
+    text-shadow: 0 .1em .1em #000;
+    font-size: .8em;
+    padding-bottom: 10px;
+}
+
+.carousel-caption > h3 {
+    text-shadow: 0 .1em .1em #000;
+    font-size: 1.75em;
+    font-family: Lobster, Montserrat, sans-serif;
+}
+
+.carousel-indicators {
+    bottom: 0px;
+}
+
+@media screen and (min-width: 980px) {
+    .carousel-caption > h3 {
+        font-size: 2.5em;
+        text-shadow: 0 .1em .1em #000;
+    }
+
+    .carousel-caption {
+        font-size: 1.25em;
+        padding-bottom: 30px;
+        text-shadow: 0 .1em .1em #000;
+    }
+
+    .carousel-indicators {
+        bottom: 20px;
+    }
+}
+
+#newsletter .form-control {
+    width: 50%;
+}
+
+.navbar-brand {
+    padding-top: 8px;
+}
+
+/**
+    Sobreescritura de los colores de la barra de menús
+**/
+
+.navbar-default {
+    background-color: #ffd300;
+    border-color: #e2a216;
+    text-shadow: 1px 1px 2px rgba(255, 113, 23, 0.7);
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu {
+    text-shadow: 1px 1px #fff;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #d8f7d4;
+}
+.navbar-default .navbar-text {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #d8f7d4;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #d8f7d4;
+    background-color: #e2a216;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #d8f7d4;
+    background-color: #e2a216;
+}
+.navbar-default .navbar-toggle {
+    border-color: #e2a216;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #e2a216;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+    color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+    color: #d8f7d4;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #d8f7d4;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #d8f7d4;
+        background-color: #e2a216;
+    }
+}
