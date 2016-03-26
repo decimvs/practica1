@@ -60,6 +60,11 @@ body {
     padding-top: 25px;
 }
 
+#quienesSomos .img-comercio {
+    float: left;
+    padding-right: 10px;
+}
+
 #noticias .espaciado-columnas {
     margin-top: 30px;
 }
