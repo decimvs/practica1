@@ -13,6 +13,24 @@ body {
 #
 ##################################################################################*/
 
+@media screen and (max-width: 600px) {
+
+    #carrusel {
+        display: none;
+    }
+
+    #presentacion {
+        padding-top: 25px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+
+    #carrusel {
+        display: inline;
+    }
+}
+
 #presentacion  {
     background-color: #dedede;
 }
@@ -22,6 +40,37 @@ body {
     margin-top: 51px;
     padding-top: 15px;
     padding-bottom: 10px;
+}
+
+#contenedor-mapa {
+    height: 400px;
+}
+
+#formulario-mapa {
+    height: 440px;
+    padding: 20px;
+    border: 2px solid #CCC;
+    margin-bottom: 20px;
+    background-color:#FFF
+}
+
+#noticias, #quienesSomos, #contacto {
+    background-color: #dedede;
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+
+#noticias .espaciado-columnas {
+    margin-top: 30px;
+}
+
+.fecha-noticia {
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.leer-mas-noticia {
+    float: right;
 }
 
 #modo-venta, #ciudades {
@@ -68,11 +117,18 @@ body {
     padding-top: .9em;
     padding-bottom: 1.2em;
     font-weight: bold;
+    text-align: center;
+    clear: both;
+}
+
+.bloque {
+    display: block;
 }
 
 .tint {
     position: relative;
-    float: left;
+    float: inherit;
+    display: inline;
     margin-right: 20px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -139,6 +195,10 @@ body {
     text-shadow: 2px 2px 2px #0f0f0f;
 }
 
+#pie-pagina a {
+    color: #fff;
+}
+
 .titular-pie-h4 {
     border-bottom: 1px solid white;
 }
@@ -185,6 +245,58 @@ body {
 #       SOBREESCRITURA DE ESTILOS DE BOOTSTRAP
 #
 ##################################################################################*/
+
+@media (max-width: 767px) {
+    .form-inline .form-group {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .form-inline .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+    .form-inline .form-control-static {
+        display: inline-block;
+    }
+    .form-inline .input-group {
+        display: inline-table;
+        vertical-align: middle;
+    }
+    .form-inline .input-group .input-group-addon,
+    .form-inline .input-group .input-group-btn,
+    .form-inline .input-group .form-control {
+        width: auto;
+    }
+    .form-inline .input-group > .form-control {
+        width: 100%;
+    }
+    .form-inline .control-label {
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .form-inline .radio,
+    .form-inline .checkbox {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .form-inline .radio label,
+    .form-inline .checkbox label {
+        padding-left: 0;
+    }
+    .form-inline .radio input[type="radio"],
+    .form-inline .checkbox input[type="checkbox"] {
+        position: relative;
+        margin-left: 0;
+    }
+    .form-inline .has-feedback .form-control-feedback {
+        top: 0;
+    }
+}
+
 .navbar {
     -webkit-box-shadow: rgba(255, 113, 23, 0.2) 3px 5px 5px;
     -moz-box-shadow: rgba(255, 113, 23, 0.2) 3px 5px 5px;
