@@ -68,96 +68,105 @@
     </div>
 </nav>
 <section id="contacto">
-    <div class="contenedor">
+    <div class="container">
         <h1 class="titular-seccion">Contacto</h1>
         <div class="linea-inferior"></div>
-        <div class="container">
-            <div class="row">
-                <div id="formulario-mapa" class="col-md-12">
-                    <div id="address" class="col-md-5">
-                        <h2>Nos encontrarás en:</h2>
-                        <address>
-                            <strong>Asociación de Productores de la Región del Voseyón</strong><br>
-                            plaza Pury 12<br>
-                            C.P. 2000<br>
-                            Neuchâtel<br>
-                            Suiza<br>
-                            <abbr>Tfno:</abbr> +41 032 913 21 22
-                        </address>
-                    </div>
-                    <div id="contenedor-mapa" class="col-md-7"></div>
+        <div class="row">
+            <div id="formulario-mapa" class="col-md-12">
+                <div class="col-md-5">
+                    <h2>Nos encontrarás en:</h2>
+                    <address>
+                        <strong>Asociación de Productores de la Región del Voseyón</strong><br>
+                        plaza Pury 12<br>
+                        C.P. 2000<br>
+                        Neuchâtel<br>
+                        Suiza<br>
+                        <abbr>Tfno:</abbr> +41 032 913 21 22
+                    </address>
                 </div>
+                <div id="contenedor-mapa" class="col-md-7 col-xs-12"></div>
             </div>
-
-            <div class="row">
-                <form class="form-horizontal" name="commentform">
-                    <div class="form-group">
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Nombre"/>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Apellidos"/>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico"/>
-                        </div>
+        </div>
+    </div>
+</section>
+<section id="address">
+    <div class="container">
+        <div class="row">
+            <form class="form-horizontal" name="commentform">
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Nombre"/>
                     </div>
-                    <div class="form-group">
-                        <div class="col-md-12">
-                            <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Comentario o preguntas"></textarea>
-                        </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Apellidos"/>
                     </div>
-                    <div class="form-group">
-                        <div class="col-md-6">
-                            <button type="submit" value="Submit" class="btn btn-warning pull-right">Enviar</button>
-                        </div>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Comentario o preguntas"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <button type="submit" value="Submit" class="btn btn-warning pull-right">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section id="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="titular-seccion">Inscrívete a nuestro boletín de noticias</h1>
+                <div class="linea-inferior-tierra"></div>
+                <p>Inscriviéndote a nuestro boletín de noticias recibirás todas las novedades de nuestra asociación.</p>
+                <form class="form-inline text-center" method="post" action="#" >
+                    <div class="form-group newsletter-form">
+                        <input type="text" class="form-control" id="correo">
+                        <button type="button" class="btn btn-default">Inscribirse</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </section>
-<section id="newsletter">
-    <div class="contenedor">
-        <h1 class="titular-seccion">Inscrívete a nuestro boletín de noticias</h1>
-        <div class="linea-inferior"></div>
-        <p class="text-center">Inscriviéndote a nuestro boletín de noticias recibirás todas las novedades de nuestra asociación.</p>
-        <form class="form-inline text-center" method="post" action="#" >
-            <div class="form-group newsletter-form">
-                <input type="text" class="form-control" id="correo">
-                <button type="button" class="btn btn-default">Inscribirse</button>
-            </div>
-        </form>
-    </div>
-</section>
 <section id="noticias">
-    <div class="contenedor">
-        <h1 class="titular-seccion">Noticias</h1>
-        <div class="linea-inferior"></div>
+    <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-12 text-center">
+                <h1 class="titular-seccion">Noticias</h1>
+                <div class="linea-inferior"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
                 <figure class="tint">
                     <img class="img-rounded" src="img/noticia1.jpg" alt="Premio a la innovación 2016" width="370" height="260">
                 </figure>
-                <div class="text-center titulares-pie-foto">&gt; Premio a la innovación 2016</div>
+                <div class="titulares-pie-foto">&gt; Premio a la innovación 2016</div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <figure class="tint">
                     <img class="img-rounded" src="img/noticia2.jpg" alt="Elegido nuevo presidente en la asamblea 2015" width="370" height="260">
                 </figure>
-                <div class="text-center titulares-pie-foto">&gt; Elegido nuevo presidente en la asamblea 2015</div>
+                <div class="titulares-pie-foto">&gt; Elegido nuevo presidente en la asamblea 2015</div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <figure class="tint">
                     <img class="img-rounded" src="img/noticia3.jpg" alt="XV mercado de la asociación" width="370" height="260">
                 </figure>
-                <div class="text-center titulares-pie-foto">&gt; XV mercado de la asociación</div>
+                <div class="titulares-pie-foto">&gt; XV mercado de la asociación</div>
             </div>
         </div>
     </div>
 </section>
 <section id="pie-pagina">
-    <div class="contenedor">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">
                 <h4 class="titular-pie-h4">Noticias</h4>

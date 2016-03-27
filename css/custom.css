@@ -3,7 +3,6 @@
 @import url(https://fonts.googleapis.com/css?family=Exo+2);
 
 body {
-    background-color: #fff;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -43,7 +42,7 @@ body {
 }
 
 #contenedor-mapa {
-    height: 400px;
+    height: 100%;
 }
 
 #formulario-mapa {
@@ -101,12 +100,6 @@ body {
     font-family: Lobster, Montserrat, sans-serif;
 }
 
-.contenedor {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .linea-inferior {
     width: 100px;
     border: 3px solid #F38630;
@@ -115,6 +108,7 @@ body {
     margin-bottom: 1.5em;
 }
 
+
 .titulares-pie-foto
 {
     font-family: 'Exo 2', sans-serif;
@@ -122,44 +116,44 @@ body {
     padding-top: .9em;
     padding-bottom: 1.2em;
     font-weight: bold;
-    text-align: center;
-    clear: both;
 }
 
 .bloque {
     display: block;
 }
 
-.tint {
-    position: relative;
-    float: inherit;
-    display: inline;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
-    -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
-    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
-}
+@media screen and (min-width: 990px) {
+    .tint {
+        position: relative;
+        float: inherit;
+        display: inline;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        -webkit-box-shadow: rgba(0, 0, 0, .2) 3px 5px 5px;
+        -moz-box-shadow: rgba(0, 0, 0, .2) 3px 5px 5px;
+        box-shadow: rgba(0, 0, 0, .2) 3px 5px 5px;
+    }
 
-.tint:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: none;
-    -moz-transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
-}
+    .tint:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: none;
+        -moz-transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+    }
 
-.tint:hover:before {
-    background: rgba(62, 255, 177, 0.3);
+    .tint:hover:before {
+        background: rgba(62, 255, 177, 0.3);
+    }
 }
 
 #razones
@@ -188,14 +182,15 @@ body {
 }
 
 #pie-pagina {
-    background-color: #F38630;
     color: white;
     font-weight: bold;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-image: url("../img/cerealesV2.png");
+    background-color: #F38630;
+    background-image: url("../img/fondoPie.png");
+    background-position: right bottom;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
-    background-position: right;
     text-shadow: 2px 2px 2px #0f0f0f;
 }
 
@@ -204,16 +199,18 @@ body {
 }
 
 .titular-pie-h4 {
+    padding-top: 20px;
     border-bottom: 1px solid white;
 }
 
-#pie-pagina .contenedor{
+#pie-pagina{
     padding-top: 45px;
     padding-bottom: 45px;
 }
 
 .parrafo-copyright {
     margin-top: 50px;
+    padding-bottom: 20px;
 }
 
 
@@ -246,11 +243,29 @@ body {
     border-top: 4px solid #69D2E7;
 }
 
+@media screen and (max-width: 1999px) {
+    .img-responsive {
+        width: 300px;
+        height: 211px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .img-responsive {
+        width: 370px;
+        height: 260px;
+        margin: auto;
+    }
+}
+
 /*################################################################################
 #
 #       SOBREESCRITURA DE ESTILOS DE BOOTSTRAP
 #
 ##################################################################################*/
+
+
 
 @media (max-width: 767px) {
     .form-inline .form-group {
